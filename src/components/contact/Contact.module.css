@@ -1,0 +1,25 @@
+.contact_name_number {
+  display: flex;
+  gap: 10px;
+}
+.contact_delete {
+  display: flex;
+  align-items: center;
+}
+
+.contact_delete_button {
+  border: 1px solid black;
+  border-radius: 3px;
+  background-color: rgb(237, 237, 235);
+  cursor: pointer;
+  padding: 5px;
+}
+
+.contact_svg {
+  display: flex;
+  align-items: center;
+}
+
+.contact_card {
+  margin-right: auto;
+}

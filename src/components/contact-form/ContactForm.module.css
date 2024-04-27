@@ -1,0 +1,36 @@
+.contact_form {
+  border: 1px solid black;
+  width: 250px;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.contact_form_name_number {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+.contact_form_button {
+  border: 1px solid black;
+  border-radius: 3px;
+  background-color: rgb(237, 237, 235);
+  cursor: pointer;
+  padding: 5px;
+}
+
+.contact_form_div_button {
+  display: flex;
+  justify-content: center;
+}
+
+.contact_form_field {
+  padding: 5px;
+}
+
+.contact_form_error_message {
+  color: red;
+  font-size: 14px;
+}

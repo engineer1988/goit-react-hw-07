@@ -1,0 +1,13 @@
+.contact_items {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  gap: 15px;
+}
+.contact_item {
+  border: 1px solid black;
+  display: flex;
+  padding: 10px;
+  border-radius: 10px;
+  width: 250px;
+}
