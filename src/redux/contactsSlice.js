@@ -13,15 +13,15 @@ const contactsSlice = createSlice({
     builder
       .addCase(fetchContacts.pending, (state) => {
         state.loading = true;
-        state.error = false;
       })
       .addCase(fetchContacts.fulfilled, (state, action) => {
-        state.loading = true;
+        state.loading = false;
+        state.error = null;
         state.items = action.payload;
       })
-      .addCase(fetchContacts.rejected, (state) => {
+      .addCase(fetchContacts.rejected, (state, action) => {
         state.loading = false;
-        state.error = true;
+        state.error = action.payload;
       }),
 });
 export const selectContacts = (state) => {
