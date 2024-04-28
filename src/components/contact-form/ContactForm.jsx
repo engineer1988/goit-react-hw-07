@@ -3,8 +3,8 @@ import { Formik, Form, Field } from "formik";
 import { useId } from "react";
 import * as Yup from "yup";
 import { ErrorMessage } from "formik";
-import { useDispatch } from "react-redux";
-import { addContact } from "../../redux/contactsSlice.js";
+// import { useDispatch } from "react-redux";
+// import { addContact } from "../../redux/contactsSlice.js";
 
 const ContactFormSchema = Yup.object().shape({
   name: Yup.string()
@@ -18,12 +18,12 @@ const ContactFormSchema = Yup.object().shape({
 });
 
 const ContactForm = () => {
-  const dispatch = useDispatch();
+  // const dispatch = useDispatch();
   const nameFieldId = useId();
   const numberFieldId = useId();
 
   const handleSubmit = (values, actions) => {
-    dispatch(addContact(values.name, values.number));
+    // dispatch(addContact(values.name, values.number));
     actions.resetForm();
   };
   return (
